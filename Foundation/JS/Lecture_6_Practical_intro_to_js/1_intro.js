@@ -8,10 +8,10 @@ console.log("Inside intro");
 // that currently holds undefined
 let varName;
 // // default value of a variable is undefined
-// console.log("6",varName);
+//  console.log("6",varName);
 // // js -> numeric values
-// varName=10;
-// console.log("9",varName);
+ varName=10;
+console.log("9",varName);
 // varName=10.1;
 // console.log("11",varName);
 
@@ -116,14 +116,14 @@ let day = "thursday"
  *
  * ***/
 
-// console.log("Hello");
+ console.log("Hello");
 
-// function fn() {
-//     console.log(" I am a function");
-// }
-// console.log("hello again");
+ function fn() {
+    console.log(" I am a function");
+ }
+ console.log("hello again");
 
-// fn();
+ fn();
 
 // function fn(a, b) {
 //     // console.log("a", a);
@@ -149,9 +149,9 @@ let string2 = 'I am string';
 let templateString = `I am also string
  but can be multiple line`
 
-// console.log(string1);
-// console.log(string2);
-// console.log(templateString);
+ console.log(string1);
+ console.log(string2);
+console.log(templateString);
 
 function greet(firstNameVar) {
 // console.log("Hi " + firstNameVar +"!")
