@@ -1,14 +1,14 @@
 let a = true;
 console.log("Before");
 function fn() {
-    a = false;
-    console.log("I broke the while loop");
+     a = false;
+    console.log("I broke the while loop",a);
 }
-setTimeout(fn, 1000);
+setTimeout(fn, 2000);
 console.log("After");
-while (a) {
+// while (a) {
 
-}
+// }
 
 /****
  * Browser
