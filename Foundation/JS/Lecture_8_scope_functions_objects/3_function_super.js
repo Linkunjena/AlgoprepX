@@ -23,7 +23,7 @@
 // let b = a;
 
 
-// variables -> can be passed as a parameter to a function
+// // variables -> can be passed as a parameter to a function
 
 // function fn(params) {
 //     console.log("Hello Params", params);
@@ -38,33 +38,33 @@
  * 
  * ***/
 
-function fn() {
-    console.log("Hello");
-}
+// function fn() {
+//     console.log("Hello");
+// }
 
-// // fn invocation -> code inside that fn is execute 
-fn();
-// access
+// // // fn invocation -> code inside that fn is execute 
+// fn();
+// // access
 // console.log(fn);
 
 
 
-// let arr = [10, 20, 30];
-// let arr2 = arr;
-// console.log("arr",arr)
-// console.log("arr2",arr2)
+let arr = [10, 20, 30];
+let arr2 = arr;
+console.log("arr",arr)
+console.log("arr2",arr2)
 
 
-// function expression
-// const refFunction = function () {
-//     console.log("Hello i am fuunction");
-// }
+//function expression
+const refFunction = function () {
+    console.log("Hello i am fuunction");
+}
 
 const newFNVar=refFunction;
 
-// newFNVar();
-// // console.log("`````````````````");
-// refFunction();
+newFNVar();
+// console.log("`````````````````");
+refFunction();
 
 
 
@@ -99,12 +99,12 @@ const newFNVar=refFunction;
 // fn(arr2);
 
 
-function bigger(paramFN) {
-    console.log("Inside bigger")
-    paramFN();
-}
+// function bigger(paramFN) {
+//     console.log("Inside bigger")
+//     paramFN();
+// }
 
-function smaller() {
-    console.log("I am smaller");
-}
-bigger(smaller)
+// function smaller() {
+//     console.log("I am smaller");
+// }
+// bigger(smaller)

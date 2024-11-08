@@ -23,14 +23,15 @@
 // let a = 10;
 // console.log("value of a in global", a);
 // function outer() {
+//     let a=40;
 //     console.log("value of a in outer", a);
 
 //     function inner() {
 //         let a = 20;
 //         console.log("value of a in inner", a);
 //     }
-
 //     inner();
+
 // }
 // outer();
 // console.log("value of a in global", a);
