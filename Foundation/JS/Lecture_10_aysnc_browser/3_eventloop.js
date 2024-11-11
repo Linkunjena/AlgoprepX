@@ -13,10 +13,10 @@
 //     a = false;
 //     console.log("I broke the while loop");
 // }
-setTimeout(fn, 2000);
+// setTimeout(fn, 2000);
 // console.log("After");
 
-// let CurrentPlus6sec = Date.now() + 6000;
+// let CurrentPlus6sec = Date.now() + 4000;
 
 // while (Date.now() < CurrentPlus6sec) {
 
@@ -60,8 +60,9 @@ function b() {
 }
 setTimeout(a, 1000);
 console.log("After st 0sec call")
-setTimeout(a, 0);
+setTimeout(a, 1000);
 console.log("After st 1 sec call")
-setTimeout(b, 2000);
+setTimeout(b, 1000);
 console.log("After st 2 sec call")
+setTimeout(b,2000);
 console.log("After");

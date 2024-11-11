@@ -5,13 +5,14 @@
 // 3. Join all elements of the array into a single string, separated by a comma.
 
 
+let words = ["apple", "banana", "cherry", "date"];
 function advancedManipulation(words) {
-    let firstWord = words.shift();
-    words.unshift("new");
-    words.unshift(firstWord);
+    let firstWord = words.pop();
+    words.push("new");
+    words.push(firstWord);
 
-    // remove
-    words.splice(2, 1);
+   // remove
+    words.splice(0, 1);
 
     // join
     let joinedStr = words.join(",");
@@ -21,7 +22,6 @@ function advancedManipulation(words) {
 
 }
 
-let words = ["apple", "banana", "cherry", "date"];
 let result = advancedManipulation(words);
 console.log(result); // Output: "apple,new,cherry,date"
 

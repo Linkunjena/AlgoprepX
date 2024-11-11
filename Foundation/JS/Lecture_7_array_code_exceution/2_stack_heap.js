@@ -14,15 +14,15 @@
 // }
 
 // values change 
-// let a = 10;
-// a = 20;
-// let str = "hello";
-// str = "Hi";
-// console.log(a, str);
-// let arr=[10,20,30];
-// let arr2=[30,40,50];
-// arr=arr2;
-// console.log(arr);
+let a = 10;
+a = 20;
+let str = "hello";
+str = "Hi";
+console.log(a, str);
+let arr=[10,20,30];
+let arr2=[30,40,50];
+arr=arr2;
+console.log(arr);
 
 
 // const varName=20;

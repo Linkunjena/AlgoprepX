@@ -8,7 +8,7 @@ obj.age = 28;
 // update
 obj.age = 25;
 // print
-// console.log(obj);
+ console.log(obj);
 
 // object : key : value
 // -> key : string , number
@@ -31,21 +31,26 @@ let cap = {
     sayHi: function () {
         console.log("cap say's hi");
     }
-}
 
+}
+// console.log("cap",cap);
+// console.log("firstName",cap.firstName);
+// for (const key in cap) {
+//   console.log("key:",key,"value:",cap[key]);
+// }
 // print 
 // console.log("cap", cap);
 // get
 console.log("firstName", cap.firstName);
-// console.log("second movie:",cap.movies[1]);
-// console.log("state",cap.address.state);
-// cap.sayHi();
+ console.log("second movie:",cap.movies[1]);
+ console.log("state",cap.address.state);
+ cap.sayHi();
 // // update set
-// cap.friends=["Tony","Peter", "Bruce"];
-// cap.isAvenger=false;
-console.log("====================")
+ cap.friends=["Tony","Peter", "Bruce"];
+ cap.isAvenger=false;
+//console.log("====================")
 // delete
-// delete cap.movies;
+ delete cap.movies;
 // console.log("cap",cap);
 // loop 
 for(let key in cap){

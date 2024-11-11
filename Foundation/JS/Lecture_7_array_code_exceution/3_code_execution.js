@@ -35,33 +35,33 @@
  * ***/
 
 
-// let a;
-// console.log(a);
-// a = 10;
-// console.log(a);
+let a;
+console.log(a);
+a = 10;
+console.log(a);
 
 
-// function fn() {
-//     console.log("Hello");
+function fn() {
+    console.log("Hello");
 
-// }
+}
 
-// fn();
+fn();
 
-// function real() {
-//     console.log("I am real. Always run me");
-// }
+function real() {
+    console.log("I am real. Always run me");
+}
 
-// function real() {
-//     console.log("No I am real one ");
-// }
+function real() {
+    console.log("No I am real one ");
+}
 
-// function real() {
-//     console.log("You both are wasted");
-// }
-// real();
+function real() {
+    console.log("You both are wasted");
+}
+real();
 
-// console.log(window.confirm("Hello"));
+console.log(window.confirm("Hello"));
 
 
 

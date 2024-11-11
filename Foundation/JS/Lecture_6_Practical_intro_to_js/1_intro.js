@@ -12,20 +12,21 @@ let varName;
 // // js -> numeric values
  varName=10;
 console.log("9",varName);
-// varName=10.1;
-// console.log("11",varName);
+varName=10.1;
+console.log("11",varName);
 
 
 // // in js we have only strings
-// let newVar;
-// newVar="I am a string";
+let newVar;
+newVar="I am a string";
+console.log("newVar",newVar)
 // // boolean 
-// newVar=true;
-// console.log("18",newVar);
+newVar=true;
+console.log("18",newVar);
 
 // // null[user-defined], undefined(non-existence)[js]
-// newVar=null;
-// console.log(newVar);
+newVar=null;
+console.log(newVar);
 
 /*****
  * how to know the current type of a value that 
@@ -54,16 +55,16 @@ console.log("9",varName);
  * 
  * conditional -> if else and switch cases 
  * **************/
-// let number = 10;
-// if (number % 2 == 0) {
-//     console.log("I am even");
-// }
-//  else {
-//     console.log("I am odd");
-// }
+let number = 10;
+if (number % 2 == 0) {
+    console.log("I am even");
+}
+ else {
+    console.log("I am odd");
+}
 
 // if there are lot of if elses -> switch case 
-let day = "thursday"
+// let day = "thursday"
 // if (day == "mon") {
 //     console.log("working");
 // } else if (day == "tuesday" || day == "wednesday" ||
@@ -77,24 +78,25 @@ let day = "thursday"
 // }
 
 // switch case 
-// switch (day) {
-//     case "tuesday":
-//         console.log("holiday");
-//         break;
-//     case "monday":
-//     case "wednesday":
-//     case "thursday":
-//     case "friday":
-//         console.log("Working");
-//         break;
-//     case "saturday":
-//     case "sunday":
-//         console.log("weekend");
-//         break;
+let day="monday";
+switch (day) {
+    case "tuesday":
+        console.log("holiday");
+        break;
+    case "monday":
+    case "wednesday":
+    case "thursday":
+    case "friday":
+        console.log("Working");
+        break;
+    case "saturday":
+    case "sunday":
+        console.log("weekend");
+        break;
 
-//     default:
-//         console.log("invalid day");
-// }
+    default:
+        console.log("invalid day");
+}
 
 
 
@@ -104,11 +106,11 @@ let day = "thursday"
  *
  * ****/
 
-// for(let num=1;num<=10;num++){
-//     console.log("number is ", num);
-// }
+for(let num=1;num<=10;num++){
+    console.log("number is ", num);
+}
 
-// 
+
 
 
 /***
@@ -125,16 +127,16 @@ let day = "thursday"
 
  fn();
 
-// function fn(a, b) {
-//     // console.log("a", a);
-//     // console.log("b", b);
-//     let d = a + b;
-//     return d;
-// }
+function fn(a, b) {
+    // console.log("a", a);
+    // console.log("b", b);
+    let d = a + b;
+    return d;
+}
 
-// // fn("Hello ", "World");
-// let result = fn(10, 20);
-// console.log("result", result);
+// fn("Hello ", "World");
+let result = fn(10, 20);
+console.log("result", result);
 
 
 /**
