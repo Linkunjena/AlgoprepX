@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flexbox Flex Flow Lab</title>
+		<style>
+			.container {
+				display: flex;
+				flex-flow: row nowrap;
+			}
+
+			.container.column-wrap {
+				flex-flow: column wrap;
+			}
+
+			.container.row-reverse-wrap-reverse {
+				flex-flow: row-reverse wrap-reverse;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Flexbox Flex Flow Lab</h1>
+		<div class="container">
+			<div class="flex-item">Item 1</div>
+			<div class="flex-item">Item 2</div>
+			<div class="flex-item">Item 3</div>
+			<div class="flex-item">Item 4</div>
+			<div class="flex-item">Item 5</div>
+		</div>
+		<div class="container column-wrap">
+			<div class="flex-item">Item 1</div>
+			<div class="flex-item">Item 2</div>
+			<div class="flex-item">Item 3</div>
+			<div class="flex-item">Item 4</div>
+			<div class="flex-item">Item 5</div>
+		</div>
+		<div class="container row-reverse-wrap-reverse">
+			<div class="flex-item">Item 1</div>
+			<div class="flex-item">Item 2</div>
+			<div class="flex-item">Item 3</div>
+			<div class="flex-item">Item 4</div>
+			<div class="flex-item">Item 5</div>
+		</div>
+	</body>
+</html>

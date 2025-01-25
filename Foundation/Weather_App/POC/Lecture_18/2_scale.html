@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>scalar-property</title>
 </head>
 <style>
     * {
@@ -18,41 +18,40 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        background: linear-gradient(135deg, #153677,#4e085f);
     }
 
     .box {
         height: 100px;
         width: 100px;
         transition-duration: 1s;
+        border: 3px solid black;
+        border-radius: 15px;
     }
 
     .one {
         background-color: aqua;
-
-
     }
 
     .two {
         background-color: lightcoral;
-
     }
 
     .three {
         background-color: lightgreen;
-
     }
 
     .one:hover {
-        transform: scaleX(150%);
+        transform: scaleX(120%);
     }
 
     .two:hover {
-        transform: scaleY(150%);
+        transform: scaleY(120%);
     }
 
     .three:hover {
         /* it will rotate in user's view */
-        transform: rotate(50deg) scale(50%);
+        transform: rotate(120deg) scale(120%);
     }
 </style>
 

@@ -3,30 +3,30 @@
  * how js run the code -> dynamically typed language
  * */
 
-console.log("Inside intro");
+//console.log("Inside intro");
 // varaible declaration -> varname is a varibale
 // that currently holds undefined
 let varName;
 // // default value of a variable is undefined
-//  console.log("6",varName);
+ console.log("6",varName);
 // // js -> numeric values
- varName=10;
-console.log("9",varName);
-varName=10.1;
-console.log("11",varName);
+ varName=25;
+console.log("The variable is:",varName);
+varName=55.1;
+console.log("The variable name is:",varName);
 
 
 // // in js we have only strings
 let newVar;
-newVar="I am a string";
-console.log("newVar",newVar)
+newVar="Hii my self linkun and your name please";
+console.log("newVar",newVar) 
 // // boolean 
-newVar=true;
-console.log("18",newVar);
+// newVar=flase;
+// console.log("18",newVar);
 
 // // null[user-defined], undefined(non-existence)[js]
-newVar=null;
-console.log(newVar);
+const NewElem=false;
+console.log("this solution is true or not please some idea:", NewElem);
 
 /*****
  * how to know the current type of a value that 
@@ -44,23 +44,24 @@ console.log(newVar);
 // varName=10;
 // varName=false
 // varName=10.1;
-// varName="hello";
+varName="Hello my self linkun :)"
 // console.log(5/2);
-// varName='h'
-// console.log(typeof varName);
-// console.log("41",varName)
+console.log( "type of the string:" ,typeof varName);
+varName='h'
+ console.log("41", typeof varName);
 
 
 /***********
  * 
  * conditional -> if else and switch cases 
  * **************/
-let number = 10;
-if (number % 2 == 0) {
-    console.log("I am even");
-}
- else {
-    console.log("I am odd");
+let num=23;
+if (num % 2 === 0) {
+    console.log("I am even.");
+    
+
+}else{
+    console.log("I am Odd.")
 }
 
 // if there are lot of if elses -> switch case 
@@ -77,25 +78,71 @@ if (number % 2 == 0) {
 //     console.log("invalid day");
 // }
 
+
+
+// let day="sunday";
+// if (day == "monday") {
+//     console.log("this is working day:");
+    
+// }else if (day=="tuesday"||day=="wedsday"||day=="thusday") {
+//     console.log("This is an office close.");
+    
+// }else if (day=="friday"||day=="satur day") {
+//     console.log("This is an workl from Home.");
+    
+// }else if ("sunday") {
+//     console.log("this is weekend.")
+    
+// }else{
+// console.log("invalid day.")
+// }
+
+
+
 // switch case 
-let day="monday";
+// let day="monday";
+// switch (day) {
+//     case "tuesday":
+//         console.log("holiday");
+//         break;
+//     case "monday":
+//     case "wednesday":
+//     case "thursday":
+//     case "friday":
+//         console.log("Working");
+//         break;
+//     case "saturday":
+//     case "sunday":
+//         console.log("weekend");
+//         break;
+
+//     default:
+//         console.log("invalid day");
+// }
+
+
+let day="wednsday";
 switch (day) {
-    case "tuesday":
-        console.log("holiday");
-        break;
     case "monday":
-    case "wednesday":
-    case "thursday":
-    case "friday":
-        console.log("Working");
+        console.log("This is an office.");
         break;
-    case "saturday":
-    case "sunday":
-        console.log("weekend");
-        break;
+        case "Thusesday":
+            case "wednsday":
+                case "thusday":
+                    console.log("this is work from home.");
+                    break;
+                    case "friday":
+                        case "saturday":
+                            console.log("This holyday.");
+                            break;
+                            case "sunday":
+                                console.log("This day is special.");
+                                break;
+
 
     default:
-        console.log("invalid day");
+        console.log("value is invalid.");
+        break;
 }
 
 
@@ -118,7 +165,7 @@ for(let num=1;num<=10;num++){
  *
  * ***/
 
- console.log("Hello");
+//  console.log("Hello");
 
  function fn() {
     console.log(" I am a function");
@@ -127,17 +174,35 @@ for(let num=1;num<=10;num++){
 
  fn();
 
-function fn(a, b) {
-    // console.log("a", a);
-    // console.log("b", b);
-    let d = a + b;
-    return d;
+
+console.log("Hii hello i am fn1");
+ function fn() {
+    console.log("no, i am a fn2");
 }
+console.log("Never, gays i am fn3");
+fn();
+
+
+// function fn(a, b) {
+//     console.log("a", a);
+//     console.log("b", b);
+//     let d = a + b;
+//     return d;
+// }
 
 // fn("Hello ", "World");
-let result = fn(10, 20);
-console.log("result", result);
+// let result = fn(10, 20);
+// console.log("result", result);
 
+
+function fn( a, b){
+    console.log("a",a);
+    console.log("b",b);
+    let c = a + b;
+    return c;
+}
+let result = fn(5, 4);
+console.log(result);
 
 /**
  * strings : how strings work in js 
@@ -149,7 +214,8 @@ console.log("result", result);
 let string1 = "I am string";
 let string2 = 'I am string';
 let templateString = `I am also string
- but can be multiple line`
+ 
+but can be multiple line`
 
  console.log(string1);
  console.log(string2);

@@ -1,5 +1,4 @@
 
-
 const videoBtn = document.querySelector("#videoBtn");
 const videoInput = document.querySelector("#videoInput");
 const videoPlayer = document.querySelector("#main");
@@ -119,9 +118,9 @@ const volumeUpHandler = () => {
     }
     const increasedVolume = videoElement.volume + 0.1
     videoElement.volume = increasedVolume;
-    // console.log("increseas volume", increasedVolume);
+    //  console.log("increseas volume", increasedVolume);
     const percentage = (increasedVolume * 100) + "%";
-    showToast(percentage)
+    showToast(percentage);
 }
 
 const volumeDownHandler = () => {
@@ -135,10 +134,11 @@ const volumeDownHandler = () => {
         videoElement.volume = 0;
         return
     }
+    
     const decreaseVolume = videoElement.volume - 0.1;
     videoElement.volume = decreaseVolume
     const percentage = (decreaseVolume * 100) + "%";
-    showToast(percentage)
+    showToast(percentage);
 }
 
 
@@ -154,7 +154,7 @@ function showToast(message) {
 
 // identify on which event your logic should trigger
 speedUp.addEventListener("click", speedUpHandler);
-speedDown.addEventListener("click", speedDownhandler)
+speedDown.addEventListener("click", speedDownhandler);
 volumeUp.addEventListener("click", volumeUpHandler);
 volumeDown.addEventListener("click", volumeDownHandler);
 

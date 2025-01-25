@@ -15,15 +15,19 @@
     body {
         margin: 0px;
         height: 100vh;
+        width: 100vw;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        background: linear-gradient(135deg, #153677,#4e085f);;
     }
 
     .box {
         height: 150px;
         width: 150px;
-        transition-duration: 1s;
+        transition-duration: 2s;
+        cursor: pointer;
+
     }
 
     .one {
@@ -32,27 +36,28 @@
     }
 
     .two {
-        background-color: lightcoral;
+        background-color: green;
 
     }
 
     .three {
-        background-color: lightgreen;
+        background-color: red;
 
     }
 
     .one:hover {
-        transform: rotateX(50deg);
+        transform: rotateY(75deg);
     }
 
     .two:hover {
-        transform: rotateY(50deg);
+        transform: rotateX(75deg);
     }
 
     .three:hover {
         /* it will rotate in user's view */
-        transform: rotate(50deg);
+        transform: rotate(360deg);
     }
+
 </style>
 
 <body>

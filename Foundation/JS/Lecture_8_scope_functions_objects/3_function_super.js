@@ -8,12 +8,12 @@
  * */
 
 // fn defenition
-// function fn() {
-//     console.log("Hello");
-// }
+function fn() {
+    console.log("Hello");
+}
 
 // // // fn invocation -> code inside that fn is execute 
-// fn();
+ fn();
 
 
 // variables -> assign ->reference , value
@@ -49,10 +49,10 @@
 
 
 
-let arr = [10, 20, 30];
-let arr2 = arr;
-console.log("arr",arr)
-console.log("arr2",arr2)
+// let arr = [10, 20, 30];
+// let arr2 = arr;
+// console.log("arr",arr)
+// console.log("arr2",arr2)
 
 
 //function expression
@@ -63,7 +63,7 @@ const refFunction = function () {
 const newFNVar=refFunction;
 
 newFNVar();
-// console.log("`````````````````");
+console.log("`````````````````");
 refFunction();
 
 
@@ -87,24 +87,24 @@ refFunction();
 
 
 
-// let arr = [10, 20, 30];
-// let arr2 = arr
+let arr = [10, 20, 30];
+let arr2 = arr
 
 
-// function fn(params) {
-//     console.log("Hello Params", params);
-// }
-// fn(10);
-// fn("Hello");
-// fn(arr2);
+function fn(params) {
+    console.log("Hello Params", params);
+}
+fn(10);
+fn("Hello");
+fn(arr2);
 
 
-// function bigger(paramFN) {
-//     console.log("Inside bigger")
-//     paramFN();
-// }
+function bigger(paramFN) {
+    console.log("Inside bigger")
+    paramFN();
+}
 
-// function smaller() {
-//     console.log("I am smaller");
-// }
-// bigger(smaller)
+function smaller() {
+    console.log("I am smaller");
+}
+bigger(smaller)

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Position</title>
     <style>
         * {
             box-sizing: border-box;
@@ -13,9 +13,13 @@
         .parent {
             height: 30rem;
             width: 40rem;
-            background-color: rebeccapurple;
+            background-color:lightblue;
+            margin-top: 150px;
+            margin-left: 200px;
+            border: 3px solid red;
             /* layout ke feature */
             display: flex;
+          
             /* flex-direction:column; */
             /* horizontally */
             /* justify-content: flex-start; */
@@ -23,28 +27,71 @@
             /* justify-content: end; */
             /* justify-content: space-evenly; */
             /* justify-content: space-between; */
-            /* justify-content: space-around; */
+            justify-content: space-evenly;
             /* align items */
             align-items: center;
             /* align-items: flex-start; */
             /* align-items: flex-end; */
+            position: relative;
+   
         }
         .child {
-            color: rgb(179, 40, 40);
-            font-size: 2rem;
-            background-color: lightcoral;
+            color:white;
+            font-size: 1rem;
+           
             font-weight: bold;
-            border: 1px solid green;
+            border: 1px solid black;
             font-family: sans-serif;
             height: 100px;
             width: 100px;
         }
         .one{
-        align-self: flex-start;
+            background-color: green;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        
+        /* align-self: flex-end; */
+        
         }
 
         .two{
-            align-self: flex-end;
+            background-color:red;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            /* align-self: flex-end; */
+           
+            
+        }
+        .three{
+            background-color: yellow;
+            position: absolute;
+            right:0px;
+            top: 0px;
+          
+            /* align-self: flex-start; */
+        }
+        .four{
+            background-color: blue;
+            /* align-self: center; */
+         position: absolute;
+         bottom: 0px;
+         right: 0px;
+            
+             
+             /* margin-left: 120px; */
+             
+          
+          
+        }
+        .five{
+            background-color: orange;
+            /* align-self: flex-end; */
+            /* position: absolute;
+            bottom: 0px;
+            right: 0px; */
+
         }
 
     </style>
@@ -54,10 +101,15 @@
 
 </body>
 <h2>Flexbox Example</h2>
+
 <div class="parent">
-    <div class="child one"> child </div>
-    <div class="child two ">child</div>
-    <div class="child three"> child</div>
+    <div class="child one"> box1 </div>
+    <div class="child two ">box2</div>
+    <div class="child three ">box3</div>
+    <div class="child four ">box4</div>
+    <div class="child five ">box5</div>
 </div>
+    
+
 
 </html>

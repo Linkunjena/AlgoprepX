@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    
+margin-top: 70px;
+}
+.container{
+    height:300px;
+    width: 550px;  
+    background-color: #fff;
+    align-self: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.169);
+	padding: 20px;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+
+    
+}
+
+.profile-photo{
+   height: 80px;
+   width: 80px;
+   border:3px solid #ccc ;
+   border-radius: 50%;
+  
+ 
+}
+.top-section{
+    display:flex;
+    margin-top: 20px;
+    gap: 1.5rem;
+}
+.bio-border{
+    margin-top: 0.5rem;
+
+  
+}
+.name{
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #333;
+}
+.bio-data{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #7777;
+    
+}
+.button-box{
+   
+    display: flex;
+   gap: 1.5rem;
+   justify-content: center;
+   margin-top: 30px; 
+   position: relative;
+  
+
+}
+.Btn{
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    cursor: pointer;
+  
+}
+.msg-box{
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    left:125px;
+    top: 15px;
+    background-color: #6C757D; 
+	color: #ffffff;
+}

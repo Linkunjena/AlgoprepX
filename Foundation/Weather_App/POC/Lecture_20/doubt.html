@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doubt section </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>This is pratice section<h2>
+        <input typy="text" placeholder="Enter your location" id="input">
+   <button id="search-btn">click me!</button>
+   <script>
+    const Btn = document.querySelector("#search-btn");
+    const inputType=document.querySelector("#input");
+    
+    const inputValue = async function fn() {
+        const location= inputType.value;
+        const data= await fetchWeather(location);
+        
+    }
+    Btn.addEventListener("click", inputValue);
+
+  async  function fetchWeather(location) {
+        const url=`http://api.weatherapi.com/v1/current.json?key=6fc74cf82bc44773a8a171855241407&q=${location}&aqi=no`
+const response= await fetch(url);
+console.log(response);
+const json= await response.json();
+console.log(json);
+        
+    }
+    
+
+
+   </script>
+    
+</body>
+</html>

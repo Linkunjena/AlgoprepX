@@ -8,6 +8,11 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+span{
+    background-color: yellow;
+    height: 30px;
+    width: 40px;
+}
 
 /* element selector */
 /* h2 {
@@ -28,19 +33,25 @@ p {
     line-height: 20px;
 } */
 /* class selector */
-.para{
-color:blue;
+.para1{
+color:red;
 font-size: 20px;
+}
+.para{
+    color: blue;
+    background-color: aqua;
+    font-size: 20px;
 }
 
 #unique{
-    color: red;
+    color: orange;
 }
 #unique2{
     color: green;
 }
 .some{
-    font-style: italic;
+    font-style:bold;
+    font-weight: 600;
 }
 
 .para.some{

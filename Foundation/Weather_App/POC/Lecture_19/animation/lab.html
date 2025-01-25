@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shape-changer</title>
+</head>
+<style>
+       *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+       }
+       body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background: linear-gradient(135deg, #153677,#4e085f); */
+       }
+       .container{
+        height: 400px;
+        width: 400px;
+        background: linear-gradient(135deg, #153677,#4e085f);
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        animation: rotate-bg 4s linear  infinite alternate;
+       }
+       .box{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        border: 2px solid black;
+        animation-name: box-move;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+       animation-timing-function: linear;
+       animation-direction: alternate;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+       }
+
+       @keyframes rotate-bg{
+        to{
+            transform: rotate(-360deg);
+        }
+        50%{
+            opacity: 1.5;
+        }
+       }
+@keyframes box-move{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    33%{
+        top: 100%;
+        left: 0px;
+        transform: translateY(-100%);
+    }
+    50%{
+        border-radius: 50%;
+    }
+    66%{
+        left: 100%;
+        top: 100%;
+        transform: translate(-100%, -100%);
+    }
+    100%{
+        top: 0px;
+        left: 100%;
+        transform: translateX(-100%);
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

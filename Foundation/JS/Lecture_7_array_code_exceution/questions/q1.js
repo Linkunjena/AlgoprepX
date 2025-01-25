@@ -25,3 +25,19 @@ function advancedManipulation(words) {
 let result = advancedManipulation(words);
 console.log(result); // Output: "apple,new,cherry,date"
 
+
+
+
+
+let stdName=["litu","chiku","mantu","situ","lipu"]
+function fullName(stdName) {
+    let firstName=stdName.shift();
+    stdName.unshift("liku");
+    stdName.unshift(firstName);
+    stdName.splice(2,1);
+    let joinstr=stdName.join(",");
+    return joinstr;
+    
+}
+let output=fullName(stdName);
+console.log(output)

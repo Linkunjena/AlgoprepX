@@ -38,10 +38,30 @@
     absolute unit
     1rem =font-size of html tag
     usually font-size of html tag is 16px 
-    */
-    /* html {
+    
+     /* html {
         font-size: 20px;
     }
+
+     .rem {
+        font-size: 2rem;
+        height: 10rem;
+        width: 20rem;
+        background-color: lightblue;
+        margin: 1rem;
+    } 
+
+    /* .rem2 { */
+
+        /* font-size: 1rem;
+        height: 10rem;
+        width: 10rem;
+        background-color: lightgreen;
+        margin: 0.5rem;
+    }  */ */
+
+    /* 100vh=browser current window-height */
+    /* 100vw=browser current window-width */
 
     .rem {
         font-size: 2rem;
@@ -49,19 +69,8 @@
         width: 20rem;
         background-color: lightblue;
         margin: 1rem;
-    }
+    } 
 
-    .rem2 {
-
-        font-size: 1rem;
-        height: 10rem;
-        width: 10rem;
-        background-color: lightgreen;
-        margin: 0.5rem;
-    } */
-
-    /* 100vh=browser current window-height */
-    /* 100vw=browser current window-width */
     .vh-vw {
         /* height: 200px; */
         margin-top: 10px;
@@ -86,6 +95,27 @@
         height: 100%;
         background-color: yellowgreen;
     }
+    .box1{
+        margin-top: 20px;
+        height: 350px;
+        width: 300px;
+        background-color: green;
+
+    }
+    .box2{
+        height: 40%;
+        width: 50% ;
+        background-color: yellow;
+        padding-left: 20px;
+        padding-top: 20px;
+        
+    }
+.box3{
+    height: 30%;
+    width: 35%;
+    background-color: aqua;
+}
+
     
 </style>
 
@@ -94,17 +124,21 @@
     <h3>Absolute</h3>
 
     <div class="px">Pixel Element</div>
-    <!-- <div class="rem">REM unit</div> -->
+    <div class="rem">REM unit</div>
     <!-- <div class="rem2">REM unit</div> -->
 
-    <!-- <div class="vh-vw">VH - VW unit</div> -->
+    <div class="vh-vw">VH - VW unit</div>
     <!-- percentage -->
     <div class="gp">
         <div class="parent">
             <div class="child"> percentage </div>
         </div>
     </div>
-
+<div class="box1">
+    <div class="box2">
+        <div class="box3">box model</div>
+    </div>
+</div>
 </body>
 
 </html>

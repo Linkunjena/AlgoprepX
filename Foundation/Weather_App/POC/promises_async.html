@@ -11,19 +11,21 @@
 
     <button>Fetch Data</button>
     <script>
-        const btn = document.querySelector("button");
         // function datapcb(data) {
-        //     console.log("iside datapcb")
-        //     console.log(data);
+            //     console.log("iside datapcb")
+            //     console.log(data);
+            
+            // }
+            
+            // function pcb(response) {
+                //     console.log("inisde pcb")
+                //     response.json().then(datapcb);
+                // }
+                const btn = document.querySelector("button");
+                async function cb() {
 
-        // }
-
-        // function pcb(response) {
-        //     console.log("inisde pcb")
-        //     response.json().then(datapcb);
-        // }
-        async function cb() {
-            console.log(" I am clicked");
+                    
+                  console.log(" I am clicked");
 
             const url = "https://jsonplaceholder.typicode.com/todos/1";
             console.log("Promise before");

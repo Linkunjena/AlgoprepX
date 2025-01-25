@@ -34,3 +34,18 @@
 // }
    
 // }
+
+
+let chose = 25;
+for (let i = 0; i <= chose; i++) {
+   if (i%3==0 && i%5==0) {
+      console.log(i,"this number is divisible by both");
+   }else if (i%3==0) {
+      console.log(i,"this number is divisible by 3")
+   }else if (i%5==0) {
+      console.log(i,"this number is divisible by 5.")
+   }else{
+      console.log(i,"this number not divisible by 3 and 5")
+   }
+   
+}

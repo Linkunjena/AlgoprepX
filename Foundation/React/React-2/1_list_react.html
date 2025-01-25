@@ -19,6 +19,7 @@
     <h1>JSX example</h1>
     <div id="root">
 
+
     </div>
     <script type="text/babel">
         const rootElement = document.getElementById('root');
@@ -27,7 +28,7 @@
 
         function ShoppingCart() {
             const cart = ["Apple", "Oranges", "Brocoli", "Grapes"];
-            return <ul>{cart.map((elem, index) => {
+            return <ul>{cart.map((elem,index) => {
                 return <li key={index}>
                     <div>{elem}</div>
                     <button>Click</button>

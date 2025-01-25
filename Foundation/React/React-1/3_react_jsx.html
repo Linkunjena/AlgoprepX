@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>jsx Element</title>
 
     <!-- react algorithm -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
@@ -21,17 +21,26 @@
     <h1>JSX example</h1>
     <div id="root">
 
+    </div> 
+    <div id="box">
+        
     </div>
     <script type="text/babel">
         const rootElement = document.getElementById('root');
+        const boxElement=document.getElementById("box");
 
 
         // functions that returns -> html
         function Heading() {
             return <h1>Hi from JSX:)</h1>
         }
+        
+        function Heading2() {
+            return <p>Input some paragraph in this box </p>
+        }
         // ReactDOM-> 1
-        ReactDOM.render(<Heading></Heading>, rootElement)
+        ReactDOM.render(<Heading></Heading>, rootElement);
+        ReactDOM.render(<Heading2></Heading2>,boxElement);
 
     </script>
 </body>

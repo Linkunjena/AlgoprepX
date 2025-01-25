@@ -1,4 +1,4 @@
-let a = true;
+let a = false;
 console.log("Before");
 function fn() {
      a = false;

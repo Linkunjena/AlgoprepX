@@ -3,12 +3,12 @@
  * Synchronous : the code that is executed line by line
  * 
  * ****/
-// function fn() {
-//     console.log("Before");
-//     console.log("I am fn");
-// }
-// console.log("After");
-// fn();
+function fn() {
+    console.log("Before");
+    console.log("I am fn");
+}
+console.log("After");
+fn();
 
 /***
  * Asynchronous code : a part of code is executed 
@@ -19,9 +19,9 @@
 //1
 // //2
 console.log("Before");
-setTimeout(fn, 2000);
 function fn() {
     console.log("I am fn");
+    setTimeout(fn, 2000);
 }
 //3
 console.log("After");

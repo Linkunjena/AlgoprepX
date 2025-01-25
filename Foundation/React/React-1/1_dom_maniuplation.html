@@ -4,18 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>React Element</title>
 </head>
 
 <body>
     <h1>DOM Manipulation example</h1>
     <div id="root"></div>
     <script>
-        const root = document.querySelector("#root");
-        const headingElement =
-            document.createElement("h1");
-        headingElement.innerText = "HI from nominees:)";
-        headingElement.style.color = "blue"
+        // const root = document.querySelector("#root");
+        // const headingElement =
+        //     document.createElement("h1");
+        // headingElement.innerText = "Hi from nominees:)";
+        // headingElement.style.color = "blue"
+        // root.appendChild(headingElement);
+
+
+        const root = document .querySelector("#root");
+        const headingElement = document.createElement("h1");
+        headingElement.innerText = "Hii my self linkun :)";
+        headingElement.style.backgroundColor = "red";
+        root.appendChild(headingElement);
         root.appendChild(headingElement);
     </script>
 </body>

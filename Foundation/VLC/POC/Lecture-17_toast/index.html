@@ -27,6 +27,15 @@
         left: 383px;
         display: none;
     }
+    button{
+        background-color: aqua;
+        color: red;
+        cursor: pointer;
+
+    }
+    button:hover{
+        font-size: medium;
+    }
 </style>
 
 <body>
@@ -45,8 +54,10 @@
 
         button.addEventListener("click", function () {
 
-            // show
-            toast.style.display = "block";
+            // show 
+            toast.style.display="block";
+            
+           
 // 2 sec delay
             setTimeout(function () {
                 toast.style.display = "none";

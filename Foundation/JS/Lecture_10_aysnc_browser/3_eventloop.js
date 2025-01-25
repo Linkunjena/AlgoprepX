@@ -10,7 +10,7 @@
 // let a = true;
 // console.log("Before");
 // function fn() {
-//     a = false;
+//     a = true;
 //     console.log("I broke the while loop");
 // }
 // setTimeout(fn, 2000);

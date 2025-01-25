@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+  }
+  
+  header {
+    height: 10rem;
+    background-color: lightblue;
+  }
+  
+  main {
+    height: calc(100vh - 10rem);
+    background-color: lightcoral;
+    overflow-y: auto; /* Allows scrolling if the content overflows */
+  }

@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2_reactIntro</title>
 
     <!-- react algorithm -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
 
     <!-- react dom algorithm -->
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-</head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <h1>React Manipulation example</h1>
-    <div id="root">
-
-    </div>
+    <div id="root"></div>
+    <div class="heading"></div>
     <script>
-        const rootElement = document.getElementById('root');
+       const rootElement = document.getElementById('root');
+      const headElement = document.querySelector(".heading");
 
-        // react.createElement
-        // -> tagname, props-> styling , content
-    const reactHeadElement = React.createElement("h1", {style: {color: "red"}}, "Hello from react");
-
-        // ReactDOM
-        ReactDOM.render(reactHeadElement, rootElement)
-
-    </script>
-</body>
-
+      const reactHeadElement = React.createElement("h1", {style: {color: "red"}}, "Hello from react");
+      
+      const reactUpdateElement = React.createElement(
+        "h2",
+        { style: { backgroundColor: "yellow" } },
+        "I am create a heading using react"
+      );
+      // react.createElement
+      // -> tagname, props-> styling , content
+      // ReactDOM
+      ReactDOM.render(reactUpdateElement, headElement);
+       ReactDOM.render(reactHeadElement, rootElement);
+     </script>
+  </body>
 </html>

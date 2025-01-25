@@ -29,15 +29,22 @@
             /* border-top: 0.5rem solid red;
             border-left: 0.5rem solid red;
             border-bottom: 0.5rem solid red;
-            border-right: 0.5rem solid red; */
-            border: 0.5rem solid red;
+      
+            border: 2px solid red;
+            margin-left: 10px;
+            margin-bottom: 10px;
 
 
     /* 
+    
     element width : width + borderL+ bordeR + paddingL + paddingR
     element height : height + borderT+ borderB + paddingT + paddingR
 
      */
+     border-right: 5px solid black;
+     border-top: 5px solid black;
+     margin-left: 10px;
+     margin-bottom: 10px;
         }
 
         .one {
@@ -46,16 +53,25 @@
             margin-left: 3rem;
             margin-right: 1rem;
         }
+    .container{
+        height: 500px;
+        width: 500px;
+        background-color:lightgray;
+        border: 2px solid black;
+    }
     </style>
 </head>
 
 <body>
     <h1>Box Model Example </h1>
-    <div class="box1 one">
-        1
-    </div>
-    <div class="box1">
-        2
+    <div class="container">
+        <div class="box1 one">
+            1
+        </div>
+        <div class="box1">
+            2
+        </div>
+
     </div>
 
 </body>

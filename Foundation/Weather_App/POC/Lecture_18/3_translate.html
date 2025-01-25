@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>translate</title>
 </head>
 <style>
     * {
@@ -24,6 +24,7 @@
         height: 100px;
         width: 100px;
         transition-duration: 1s;
+        border: 2px solid black;
     }
 
     .one {
@@ -42,26 +43,31 @@
     }
     .one:hover {
         /* transform: translateX(50%); */
-        transform: translateY(50%);
-
+        transform: translateY(100%);
+        background-color: green;
+      text-align: center;
     }
     .two:hover {
         /* transform: translateY(100%); */
-        transform: translateX(50%);
+        transform: translateX(100%);
+        background-color: blue;
+        text-align: center;
 
     }
 
     .three:hover {
-        transform: translate(50%, 50%);
+        transform: translate(100%, 100%);
+        background-color: yellow;
+        text-align: center;
 
     }
 </style>
 
 <body>
     <h2>Translate</h2>
-    <div class="box one"></div>
-    <div class="box two"></div>
-    <div class="box three"></div>
+    <div class="box one">Box1</div>
+    <div class="box two">Box2</div>
+    <div class="box three">Box3</div>
 </body>
 
 </html>

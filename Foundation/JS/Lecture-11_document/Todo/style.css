@@ -15,6 +15,7 @@ h3 {
 .todo {
     width: 400px;
     margin: auto;
+    background-color: rgba(86, 242, 242, 0.833);
     border: 2px solid gray;
     height: 500px;
 }
@@ -24,6 +25,7 @@ h3 {
     width: 300px;
     height: 60px;
     margin-top: 30px;
+    
 }
 
 .list {

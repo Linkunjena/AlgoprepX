@@ -1,18 +1,18 @@
 
 // code execution -> high level
-// let a=10;
-// console.log(a);
-// function fn() {
-//     console.log("I am fn");
-//     function inner() {
-//         console.log("I am inner");
-//     }
-//     console.log("I am fn 2")
-//     inner();
-//     console.log("I am fn 3")
-// }
-// fn();
-// console.log(a);
+//  let a=10;
+//  console.log(a);
+function fn() {
+    console.log("I am fn");
+    function inner() {
+        console.log("I am inner");
+    }
+    console.log("I am fn 2")
+    inner();
+    console.log("I am fn 3")
+}
+fn();
+//console.log(a);
 
 
 /****
@@ -35,18 +35,16 @@
  * ***/
 
 
-let a;
-console.log(a);
-a = 10;
+let a=10;
 console.log(a);
 
 
-function fn() {
-    console.log("Hello");
+function fn1() {
+    console.log("Hii my self linkun jena :)");
 
 }
 
-fn();
+fn1();
 
 function real() {
     console.log("I am real. Always run me");

@@ -37,6 +37,11 @@
             // // jb bhi update -> react 
             // const value = arr[0];
             // // the function that is given to you by react
+            const handleDecrement = () => {
+                if (value == 0)
+                    return
+                setValue(value - 1);
+            }
             // const setValue = arr[1];
             const handleIncrement = () => {
                 if (value == 10) {
@@ -44,15 +49,10 @@
                 }
                 setValue(value + 1);
             }
-            const handleDecrement = () => {
-                if (value == 0)
-                    return
-                setValue(value - 1);
-            }
             return <div>
                 <div>{value}</div>
-                <button onClick={handleIncrement}>+ Plus</button>
                 <button onClick={handleDecrement}>- Minus</button>
+                <button onClick={handleIncrement}>+ Plus</button>
             </div>
 
         }
